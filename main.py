@@ -26,7 +26,7 @@ def user_interaction():
         sd.delete_vacancy(words_del)
     fit_back = input("Требуется определенная выборка для вывода, или все данные из файла? 'Определенные,Все': ")
     if fit_back == 'Определенные':
-        words_sample = input("Введите ключевое слово для выборки данных(Город, название вакансии и т.п): ")
+        words_sample = input("Введите ключевое слово для выборки данных( Город, название вакансии и т.п): ")
         sd.vacancy_from_file(words_sample)
     elif fit_back == "Все":
         sd.full_data_from_file()
